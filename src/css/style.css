@@ -1,0 +1,12 @@
+body,html{
+    background-color: rgb(218, 151, 151);
+}
+h2{
+    font-size: 100%;
+    text-align: center;
+}
+.container__image{
+    position: relative;
+    left:37%;
+
+}

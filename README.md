@@ -48,10 +48,10 @@ Each iteration will focus on building out a part ot the game.  The first iterati
 
 This iteration covers project setup and starting the creation of the game.  Are first iterations are going to focus on the logic that is needed to have a game.  The JavaScript for this iteration will be solely in a ClickCounter.js file and not pertain to the html page.  We need to code some behavior before we can code the way the user interacts with the project.
 
-#### FEATURE : Use Test Driven Development to create this game.
+<!-- #### FEATURE : Use Test Driven Development to create this game.
 > As a developer, I want to use TDD to create this game, so that I know it is working as intended.
 - Create a ClickCounter.spec.js file in the `/spec/js` folder.
-- Create and set up a Jasmine spec runner for ClickCounter.js.
+- Create and set up a Jasmine spec runner for ClickCounter.js. -->
 
 #### FEATURE : Have a way to count clicks.
 > As a user, I want to know how many clicks I have clicked, so that I know what my score is.
