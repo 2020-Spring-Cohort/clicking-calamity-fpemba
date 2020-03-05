@@ -53,38 +53,38 @@ This iteration covers project setup and starting the creation of the game.  Are 
 - Create a ClickCounter.spec.js file in the `/spec/js` folder.
 - Create and set up a Jasmine spec runner for ClickCounter.js. -->
 
-#### FEATURE : Have a way to count clicks.
+<!-- #### FEATURE : Have a way to count clicks.
 > As a user, I want to know how many clicks I have clicked, so that I know what my score is.
 - Can record a click.
-- Can retrieve a click count.
+- Can retrieve a click count. -->
 
 #### FEATURE : Be able to purchase the first _Clicking Companion_ with 100 clicks from your click count.
-> As a user, I want to be able to purchase _Clicking Companions_, so that I don't have to keep clicking a button all day.
+<!-- > As a user, I want to be able to purchase _Clicking Companions_, so that I don't have to keep clicking a button all day.
 - Can retrieve a _Clicking Companion_ count.
 - Can add to the _Clicking Companion_ count.
-- Subtract the amount of the _Clicking Companion_ cost from your click count.
+- Subtract the amount of the _Clicking Companion_ cost from your click count. -->
 
 #### FEATURE : The cost of each _Clicking Companion_ will go up with each purchase.
 > As a game designer, I want the game to become more difficult as the game progresses, so that users will continue to play the game.
 - Increase the cost of the second _Clicking Companion_ by an additional ten percent to 110.
 - Increase the cost of every additional _Clicking Companion_ by an additional ten percent.
 
-#### FEATURE : Ensure that there are enough clicks to buy a _Clicking Companion_.
+<!-- #### FEATURE : Ensure that there are enough clicks to buy a _Clicking Companion_.
 > As the game designer, I want to ensure that players have to put the game into a proper state to be able to purchase a _Clicking Companion_, so that the game has a challenge.
-- Prevent the _Clicking Companion_ count from going up if there are not enough clicks to purchase a _Companion_.
+- Prevent the _Clicking Companion_ count from going up if there are not enough clicks to purchase a _Companion_. -->
 
-#### FEATURE : The amount of _Clicking Companions_ affect the amount of clicks added when an 'Add auto clicks' event is called.
+<!-- #### FEATURE : The amount of _Clicking Companions_ affect the amount of clicks added when an 'Add auto clicks' event is called.
 > As a user, I want to be able to purchase _Clicking Companions_, so that I don't have to keep clicking a button all day.
-- When the 'add auto clicks' event is executed, add the amount of _Clicking Companions_ to the click total.
+- When the 'add auto clicks' event is executed, add the amount of _Clicking Companions_ to the click total. -->
 
 ### Iteration 2
 This iteration covers the creation of the _Collective Culmination Compounders_, the higher your _Collective Culmination Compounders_ count the more each click you take is worth.
 
-#### FEATURE : Be able to purchase the first _Collective Culmination Compounder_ with 10 clicks from your click count.
+<!-- #### FEATURE : Be able to purchase the first _Collective Culmination Compounder_ with 10 clicks from your click count.
 > As a user, I want to make my clicks more powerful, so that I can make the work to get more _Clicking Companions_ easier.
 - Can retrieve a _Collective Culmination Compounder_ count.
 - Can add to the _Collective Culmination Compounder_ count.
-- Subtract the amount of the _Collective Culmination Compounder_ cost from the click count.
+- Subtract the amount of the _Collective Culmination Compounder_ cost from the click count. -->
 
 #### FEATURE : The cost of each _Collective Culmination Compounder_ will go up with each purchase.
 > As a game designer, I want the game to become more difficult as the game progresses, so that users will continue to play the game.
@@ -92,9 +92,9 @@ This iteration covers the creation of the _Collective Culmination Compounders_, 
 - Increase the cost of every additional _Collective Culmination Compounder_ by an additional ten percent.
 
 
-#### FEATURE : Ensure that there are enough clicks to buy a _Collective Culmination Compounder_.
+<!-- #### FEATURE : Ensure that there are enough clicks to buy a _Collective Culmination Compounder_.
 > As the game designer, I want to ensure that players have to put the game into a proper state to be able to purchase a _Collective Culmination Compounder_, so that the game has a challenge.
-- Prevent the _Collective Culmination Compounder_ count from going up if there are not enough clicks to purchase a _Compounder_.
+- Prevent the _Collective Culmination Compounder_ count from going up if there are not enough clicks to purchase a _Compounder_. -->
 
 #### FEATURE : The first _Collective Culmination Compounder_ should increase the value of a click 1.2x.
 > As a user, I want to make my clicks more powerful, so that I can make the work to get more _Clicking Companions_ easier.
@@ -110,23 +110,23 @@ This iteration covers the creation of the _Collective Culmination Compounders_, 
 
 ### Iteration 3
 This iteration will prepare the html document for the game.  Open the index.html file and start adding the elements you'll need.  Maintain the structure of the HTML with semantic html elements and use BEM to give useful class attribute names to your elements.  Use a combination of HTML, CSS, and JavaScript to achieve the trickier features below.
-
+<!-- 
 #### FEATURE : Create a button to click.
 > As a player, I want to have a button to click, so that I can start clicking things.
 - In the main section of the page, create a button element.
-- Label the button clearly as the button that needs to be clicked.
+- Label the button clearly as the button that needs to be clicked. -->
 
-#### FEATURE : Create a click count element.
+<!-- #### FEATURE : Create a click count element.
 > As a player, I want to know how many clicks I have, so that I can track my progress.
-- Create an element that will provide the user with the click count.
-
+- Create an element that will provide the user with the click count. -->
+<!-- 
 #### FEATURE : Create a section for the _Clicking Companions_
 > As a user, I want to be able to buy and see how many _Clicking Companions_ I have, so that I don't have to keep clicking all the time.
-- Create an section of elements that include a purchase button and a count of _Clicking Companions_.
+- Create an section of elements that include a purchase button and a count of _Clicking Companions_. -->
 
-#### FEATURE : Create a section for the _Collective Culmination Compounders_
+<!-- #### FEATURE : Create a section for the _Collective Culmination Compounders_
 > As a user, I want to be able to buy and see how many _Collective Culmination Compounders_ I have, so that my clicks can become super powered.
-- Create an section of elements that include a purchase button and a count of _Collective Culmination Compounders_.
+- Create an section of elements that include a purchase button and a count of _Collective Culmination Compounders_. -->
 
 #### FEATURE : Create a header with a link to a drop down element with information about the Company.
 > As the marketing director, I want the customers to be able to find out more information about Coo Coo Computing Challengers, so that they will buy more stuff from us.

@@ -3,74 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Project</title>
+    <title>Cookie Count Game</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
+
     <header>
 
+        
+
     </header>
-    <script>
-        let clicks = 0;
-        let clickingCompanion = 0;
-        let collectiveCulminationCompounders = 0;
 
-        function incClick() {
-            clicks++;
-            document.getElementById('cookie').innerHTML = clicks
-        }
+    <a href=# onclick="addCookie()"><img src="./Sugar.png" width="100px" height=100px></a>
+    <br> 
+    You Got:
+    <input type="text" id="cookie" disabled style = text-align:center>
 
 
-        function purchaseClickingCompanion () {
+    Cookies
+    <br> <br>
 
-            if (clicks < 100) {
-                clickingCompanion = -1;
-            }
-                clickingCompanion++;
-              
-            document.getElementById('clickingCompanion').innerHTML = clickingCompanion
+    <button><a href="#" onClick="reset()">Reset</a></button>
+    <br> <br>
 
+    <button> <a href="#" onClick= "purchaseClickingCompanion()"><img src="./cursor_PNG45.png" width="40px" height="50px">
+    </a></button> <br>
 
-        }
-        function resetClick() {
-            clicks =0;
-            document.getElementById('cookie').innerHTML = clicks
-        }
+    
 
-        function resetClickingCompanion() {
-            clickingCompanion = 0;
-            document.getElementById('clickingCompanion').innerHTML = clickingCompanion
-        }
+    <p id="costOfClickingCompanion"> Cost: 100 Cookies</p>
+    <p id="numberOfClickingCompanion">You own 0 Clicking Companions</p> <br>
+    <p id="costOfCollectiveCulminationCompounder">Cost: 10 Cookies</p>
+    <p id="numberOfCollectiveCulminationCompounders"> You own 0 Collective Collective Culmination Compounders
+    </p>
 
-        function purchaseCollectiveCulminationCompounders () {
-            collectiveCulminationCompounders*=2;
-            document.getElementById('collectiveCulminationCompounders').innerHTML = collectiveCulminationCompounders
-        }
+    <button type="button" onclick="purchaseCollectiveCulminationCompounder()">Purchase CollectiveCulmination Compounder</button>
 
-    </script>
-
-    <div class="container">
-
-        <div class="container__image">
-            <h1 id="cookie">0</h1>
-            <img src="./Sugar.png" onClick ="incClick()" alt="sugar cookie" width="300px" heigh="300px" left 40%>
-            </div>
-            
-
-            <!-- <h2>Count: <span id="clickingCompanion">0</span></h2> -->
-                <p>Must have 100 clicks to buy 1 clicking companion</p>
-            
-                <h2>Count: <span id="clickingCompanion">0</span></h2>
-                <h2>Count: <span id="collectiveCulminationCompounders">0</span></h2>
-                <button type="button" onclick="purchaseClickingCompanion()">Purchase Clicking Companion</button>
-                <button type="button" onclick="resetClickingCompanion()">Reset CC </button>
-                <button type="button" onclick="resetClick()">Reset Clicks </button>
-                <button type="button" onclick="collectiveCulminationCompounders()">Purchase Collective Culmination Compunder</button>
-
-       
-        <div class="anchor"></div>
-    </div>
-    <script src="/src/app.js"></script>
+    <script src="./src/js/app.js"></script>
 
 </body>
 </html>

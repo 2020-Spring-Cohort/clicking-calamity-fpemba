@@ -19,8 +19,13 @@ describe('Clicking Calamity Tests:', () => {
         it("ClickCounter should have 0 when new.", () => {
             expect(underTest.getCompanionCount()).toBe(0);
         });
+
         it("ClickCounter should have 1 after 100 clicks.",() =>{
-            expect(underTest.getCompanionCount(100)).toBe(1);
+            for(let i = 0; i<100; i++) {
+                underTest.countClick() 
+            }
+            underTest.purchaseCompanion()
+            expect(underTest.getCompanionCount()).toBe(1);
         });
     });
 });
