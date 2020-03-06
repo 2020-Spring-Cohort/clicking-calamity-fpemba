@@ -132,39 +132,39 @@ This iteration will prepare the html document for the game.  Open the index.html
 > As the marketing director, I want the customers to be able to find out more information about Coo Coo Computing Challengers, so that they will buy more stuff from us.
 - Create a header and add a link that will make a box of company info popup for the user.
 
-#### FEATURE : Create a header with a link to the Inspiration of our game.
+<!-- #### FEATURE : Create a header with a link to the Inspiration of our game.
 > As the game designer, I want to give gamers a reference to our inspiration, the original Cookie Clicker game, so that the legal department will stop complaining that we stole the idea.
-- Create another link that will open a new tab with Cookie Clicker's address.
+- Create another link that will open a new tab with Cookie Clicker's address. -->
 
-#### FEATURE : Create a header with a link to a drop down element with information about the Developer.
+<!-- #### FEATURE : Create a header with a link to a drop down element with information about the Developer.
 > As the developer, I want credit for writing this application, so that I can get a job.
-- Create a modal element that is centered over the application and has a quick bio link about yourself and links to your portfolio and GitHub.com account.
+- Create a modal element that is centered over the application and has a quick bio link about yourself and links to your portfolio and GitHub.com account. -->
 
 ### Iteration 4
 This iteration will wire up your ClickCounter.js file to the index.html file and use the app.js file to link the two.
 
-#### FEATURE : When you click the clicker button the click counter should change.
+<!-- #### FEATURE : When you click the clicker button the click counter should change.
 > As a user, I want to see my click score go up when I click the clicker button, so that I can be rewarded for my hard work.
-- When the clicker button is pressed the click count element should change value.
+- When the clicker button is pressed the click count element should change value. -->
 
 #### FEATURE : The _Clicking Companions_ and _Collective Culmination Compounders_ purchase button should be grayed out and unresponsive if there are not enough clicks to buy the next item.
 > As a game designer, I want the user to have a visual clue that they cannot perform a game action, so that the user isn't frustrated by clicking buttons that can not do anything.
 - When the click count is below the cost of a purchasable item, grey out or change the appearance of the button.
-- Clicking the button when an item is cannot be purchased should not perform any action.
+<!-- - Clicking the button when an item is cannot be purchased should not perform any action. -->
 
-#### FEATURE : The _Clicking Companion_ count and the _Collective Culmination Compounders_ count should be displayed.
+<!-- #### FEATURE : The _Clicking Companion_ count and the _Collective Culmination Compounders_ count should be displayed.
 > As a user, I want to know how many _Companions_ and _Compounders_ I have, so that I can brag to my friends.
 - The amount of items purchased should be displayed in the same area as the button to purchase them.
-- The amount of items purchased should be updated after each purchase.
+- The amount of items purchased should be updated after each purchase. -->
 
-#### FEATURE : The clicker button should display the current value of each click.
+<!-- #### FEATURE : The clicker button should display the current value of each click.
 > As a user, I want to know how many clicks each click on the clicker button is worth, so that I can see the effect of the _Compounders_ on my clicking.
-- Display the click multiplier value in the clicker button text or in an element somewhere close to the clicker button.
+- Display the click multiplier value in the clicker button text or in an element somewhere close to the clicker button. -->
 
-#### FEATURE : The _Clicking Companions_ and _Collective Culmination Compounders_ price in clicks should be displayed.  
+<!-- #### FEATURE : The _Clicking Companions_ and _Collective Culmination Compounders_ price in clicks should be displayed.  
 > As a user, I want to know how many clicks I have to click before I can purchase a _Clicking Companion_ or _Collective Culmination Compounder_, so that I know when I get to stop clicking.
 - Display the cost of the _Clicking Companions_ and _Collective Culmination Compounders_ in their purchase button or in an element nearby.
-- Update the costs whenever the price is changed.
+- Update the costs whenever the price is changed. -->
 
 ### Iteration 5 
 This iteration is for you to individualize your project.  Use JavaScript to affect change to how your elements are displayed, add new features, document and make changes to the above rules, or make elements move across the screen.
@@ -173,9 +173,9 @@ This iteration is for you to individualize your project.  Use JavaScript to affe
 > As a CEO, I want this app to be on the _INTERWEBS_, so that I can collect my bonus.
 - Use GitHub pages to deploy your project to the internet.
 
-#### FEATURE : Implement a way to reset the game.  
+<!-- #### FEATURE : Implement a way to reset the game.  
 > As a user, I want to be able to reset my game, so that my coworkers won't know how much time I wasted on clicking a button.
-- Have a way to stay on the same page, but reset the state of the game.
+- Have a way to stay on the same page, but reset the state of the game. -->
 
 #### STRETCH FEATURE : Click Storm!  
 > As a game designer, I want to have a random element that creates starts a _Click Storm_, so that users will be engaged in the page.

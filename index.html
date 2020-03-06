@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Count Game</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
 
-    <header>
+<body class="container">
 
-        
+    <header class="container__header">
 
+        <div class="companyPopup" onclick="companyHeader()">Click Me!
+            <span class="companyPopupText" id="companyPopup">Company info goes here
+    </span>
+
+    <h1 class="container__header__title">Cookie Clicker Game!</h1>
+
+            
     </header>
 
-    <a href=# onclick="addCookie()"><img src="./Sugar.png" width="100px" height=100px></a>
-    <br> 
-    You Got:
-    <input type="text" id="cookie" disabled style = text-align:center>
+    <div class="container__main">
 
+        <div class="container__main__companion">
+            <button id="clickingCompanionButton"><a href="#" onClick= "purchaseClickingCompanion()"><img src="./cursor_PNG45.png" width="40px" height="50px">
+    </a></button> 
+            <p id="costOfClickingCompanion"> Cost: 100 Cookies</p>
+            <p id="numberOfClickingCompanion">You own 0 Clicking Companions</p> 
+        </div>
 
-    Cookies
-    <br> <br>
+        <div class="container__main__cookie">
+            <a href=# onclick="addCookie()"><img src="./Sugar.png" width="200px" height="200px"></a>
+            <br>
+            You Got:
+            <input type="text" id="cookie" disabled style=text-align:center>
+            Cookies
+            <br> <br>
+            <button><a href="#" onClick="reset()">Reset</a></button>
+            <br> <br>
 
-    <button><a href="#" onClick="reset()">Reset</a></button>
-    <br> <br>
+            <div class="container__main__cookie__multiplier">
+                <p id="amountOfCCCMultiplier">Multipler Upgrade x1.2</p>
+                <p id="costOfCCCMulipler">Cost: 60 Cookies</p>
+                <p id="currentMuliplier"> Your Current Multipler is x1.2</p>
 
-    <button> <a href="#" onClick= "purchaseClickingCompanion()"><img src="./cursor_PNG45.png" width="40px" height="50px">
-    </a></button> <br>
+                <button type="button" onClick="buyCCCMultiplier()">Buy Multipler</button>
+            </div>
+        </div>
 
-    
+        <div class="container__main__collectiveCulminationCompunder">
 
-    <p id="costOfClickingCompanion"> Cost: 100 Cookies</p>
-    <p id="numberOfClickingCompanion">You own 0 Clicking Companions</p> <br>
-    <p id="costOfCollectiveCulminationCompounder">Cost: 10 Cookies</p>
-    <p id="numberOfCollectiveCulminationCompounders"> You own 0 Collective Collective Culmination Compounders
-    </p>
+            <p id="costOfCollectiveCulminationCompounder">Cost: 10 Cookies</p>
+            <p id="numberOfCollectiveCulminationCompounders"> You own 0 Collective Culmination Compounders</p>
+            <button type="button" onclick="purchaseCollectiveCulminationCompounder()">Purchase CollectiveCulmination Compounder</button>
 
-    <button type="button" onclick="purchaseCollectiveCulminationCompounder()">Purchase CollectiveCulmination Compounder</button>
+        </div>
+    </div>
+
+    <footer class="container__footer">
+        <div class="footer__cookie__clicker__link">
+
+            <a href=" https://orteil.dashnet.org/cookieclicker/ " target="__blank"><img src="./choclatecookie.png" width="80px" height="80px"></a>
+        </div>
+        </div>
+
+        <div class="footer__bio__link">
+
+           <a href="https://github.com/" target="__blank"><img src="./github.png" width="80px" height="80px"></a>
+            <a href="https://fpemba.github.io/" target="__blank"><img src="./linkedin.png" width=80px" height="80px"></a>
+        </div>
+    </footer>
 
     <script src="./src/js/app.js"></script>
 
 </body>
-</html>
 
+</html>
