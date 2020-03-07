@@ -1,38 +1,33 @@
-let cookiecount = 0;
+
 let autoClick = 0;
 let collectiveCulminationCompounderClick = 0;
 let multiplier = 1.2;
-
+let power=0;
+let cursorCost=100;
+let costOfCollectiveCulminationCompounder=10;
+let priceMultiplier=.10;
+let cookiecount =Math.pow(multiplier, power);
+let value = 0;
 function update() {
 
     document.getElementById('cookie').value = Math.floor(cookiecount)
 
     document.title = Math.floor(cookiecount) + "  Cookies";
 
-    document.getElementById('numberOfClickingCompanion').innerHTML = "You own " + autoClick + " Clicking Companion.";
+    document.getElementById('numberOfClickingCompanion').innerHTML = "You Have " + autoClick + " Clicking Companions.";
 
-    document.getElementById('costOfClickingCompanion').innerHTML = "Cost: " + ((autoClick + 1) * 20) + " Cookies";
+    document.getElementById('costOfClickingCompanion').innerHTML = "Cost: " + cursorCost + " Cookies";
 
-    document.getElementById('numberOfCollectiveCulminationCompounders').innerHTML = "You own " + collectiveCulminationCompounderClick +
-        " Collective Culmination Compounder";
+    document.getElementById('costOfCollectiveCulminationCompounder').innerHTML = "Cost: " + costOfCollectiveCulminationCompounder + " Cookies";
 
-    document.getElementById('costOfCollectiveCulminationCompounder').innerHTML = "Cost: " + ((collectiveCulminationCompounderClick + 1) * 10) + " Cookies";
-
-    document.getElementById('amountOfCCCMultiplier').innerHTML = "Multipler update x" + ((multiplier + 1.2));
-
-    document.getElementById('amountOfCCCMultiplier2').innerHTML =  "x" + ((multiplier + 1.2) * 50);;
-
-    document.getElementById('costOfCCCMulipler').innerHTML = "Cost: " + ((multiplier + 1.2) * 50) + "Cookies";
-
-    document.getElementById('currentMuliplier').innerHTML = "Your current multipler is x " + (((multiplier + 1.2) * 50));
- 
+    document.getElementById('numberOfCollectiveCulminationCompounders').innerHTML = "You Have " + collectiveCulminationCompounderClick + " Collective Culmination Compounders.";
 
 };
 
 
 function timer() {
-    cookiecount = cookiecount + autoClick * multiplier;
-    cookiecount = cookiecount + collectiveCulminationCompounderClick * multiplier;
+    cookiecount = cookiecount + autoClick;
+    cookiecount = cookiecount + collectiveCulminationCompounderClick;
     update()
 
 };
@@ -41,7 +36,7 @@ setInterval(timer, 1000)
 
 function addCookie() {
 
-    cookiecount++
+    cookiecount+=Math.pow(multiplier, power);
     update()
 };
 
@@ -56,34 +51,24 @@ function reset() {
 
 function purchaseClickingCompanion() {
 
-    if (cookiecount >= (autoClick + 1) * 20) {
-        cookiecount = cookiecount - ((autoClick + 1) * 20);
+    if (cookiecount >= cursorCost) {
+        cookiecount = cookiecount - cursorCost;
         autoClick = autoClick + 1;
+        cursorCost+=Math.floor((cursorCost*.10));
         update()
     }
 }
 
 function purchaseCollectiveCulminationCompounder() {
 
-    if (cookiecount >= ((collectiveCulminationCompounderClick + 1) * 10)) {
-        cookiecount = cookiecount - ((collectiveCulminationCompounderClick + 1) * 10);
-        collectiveCulminationCompounderClick = collectiveCulminationCompounderClick + 1
+    if (cookiecount >= costOfCollectiveCulminationCompounder) {
+        cookiecount = cookiecount - costOfCollectiveCulminationCompounder;
+        collectiveCulminationCompounderClick = collectiveCulminationCompounderClick + 1;
+        costOfCollectiveCulminationCompounder+=Math.round(costOfCollectiveCulminationCompounder*priceMultiplier);
+        power++;
+        cookiecount+=value;
+        priceMultiplier+=.10;
         update()
 
-        document.getElementById("CCButton").style.color="red";
-
     };
-
-    function buyCCCMultiplier(){
-        if (cookiecount >= ((multiplier + 1.2)* 50)) {
-            cookiecount = cookiecount - ((multiplier + 1.2) * 50);
-            multiplier++;
-            update()
-        }
-    }
-
-    function companyHeader(){
-        let popup = document.getElementById("companyPopup");
-        popup.classList.toggle("show");
-    }
 }

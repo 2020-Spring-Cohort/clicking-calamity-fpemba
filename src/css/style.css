@@ -1,98 +1,107 @@
-.container{
-    height: 100vh;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    background-color:gray;
-   
+ .container {
+     height: 100vh;
+     margin: 0;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto auto;
+     background-color: darkgray;
 
-}
-.container__header{
-    display: grid;
-    grid-template-columns: auto auto;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    top: 0;  
-    background-color: brown;
-    text-align: center;
-    border: solid black;
+ }
 
-}
-.ontainer__header__title{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-button {
-    background-color: goldenrod;
-    border: none;
-    color: white;
-    /* padding: 15px 15px; */
-    text-align: center;
-    text-decoration: none;
-    /* display: inline-block; */
-    font-size: 15px;
-  }
-.container__main{
-   display: grid;
-   grid-row-start: 2;
-   grid-template-columns: auto auto auto;
-   grid-template-columns: auto auto auto;
-    text-align: center;
-    width: 140%;
-    height: 100%;
-    
-    
-}
-.container__main__cookie{
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border: solid black;
-    
-}
-.container__main__companion {
+ .container__header {
+     position: fixed;
+     width: 100%;
+     height: 80px;
+     top: 0;
+     background-color: brown;
+     text-align: center;
+     border: solid darkgray;
 
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    border: solid black;
-    
-}
+ }
+ .container__header__info{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
 
-.container__main__collectiveCulminationCompunder{
+ button {
+     display: flex;
+     justify-content: center;
+     align-self: center;
+     font-size: 15px;
+     width: 20p;
+     padding: 3px;
+     margin-right: 3em;
 
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    border: solid black;
+ }
 
-}
-.container__footer{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height:80px;
-    background-color: brown;
-    border: solid black;
-    justify-content: center;
-    justify-items: center;
-    justify-content: space-evenly;
+ button:hover {
+     background-color: maroon;
+     color: white;
+ }
+
+ input {
+     font-size: 30px;
+     width: 20p;
+     background-color: darkgray;
+     justify-content: center;
+
+ }
+
+ .container__main {
+     display: grid;
+     grid-row-start: 2;
+     text-align: center;
+     width: 120%;
+     height: 100%;
+
+
+ }
+
+ .container__main__cookie {
+     display: grid;
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 3;
+     grid-row-end: 4;
     
 
-} 
-.footer__cookie__clicker__link{
+ }
+
+ .container__main__companion {
+
+     display: grid;
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 5;
     
-}
-.footer__bio__link{
-   
-}
+
+ }
+
+ .container__main__collectiveCulminationCompunder {
+
+     display: grid;
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 4;
+     
+
+ }
+
+ .container__footer {
+     display: flex;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     height: 80px;
+     background-color: brown;
+     border: solid darkgray;
+     justify-content: center;
+     justify-items: center;
+     justify-content: space-evenly;
+
+
+ }
+

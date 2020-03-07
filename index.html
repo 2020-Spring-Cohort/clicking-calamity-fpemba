@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,56 +12,44 @@
 <body class="container">
 
     <header class="container__header">
-
-        <div class="companyPopup" onclick="companyHeader()">Click Me!
-            <span class="companyPopupText" id="companyPopup">Company info goes here
-    </span>
-
-    <h1 class="container__header__title">Cookie Clicker Game!</h1>
-
-            
+<div class="container__header__info">
+       <h3>Company Info</h3>
+      <a href=" https://orteil.dashnet.org/cookieclicker/ " target="__blank"><h3>Our Inspiration</h3></a>
+       <h3>About The Developer</h3>
+    </div>
     </header>
 
     <div class="container__main">
+        
 
         <div class="container__main__companion">
-            <button id="clickingCompanionButton"><a href="#" onClick= "purchaseClickingCompanion()"><img src="./cursor_PNG45.png" width="40px" height="50px">
-    </a></button> 
+        
+    
             <p id="costOfClickingCompanion"> Cost: 100 Cookies</p>
-            <p id="numberOfClickingCompanion">You own 0 Clicking Companions</p> 
+            <p id="numberOfClickingCompanion">You Have 0 Clicking Companions.</p> 
+            <button type="button" onClick="purchaseClickingCompanion()">Purchse Clicking Companion</a></button> 
         </div>
 
         <div class="container__main__cookie">
-            <a href=# onclick="addCookie()"><img src="./Sugar.png" width="200px" height="200px"></a>
-            <br>
-            You Got:
+            <h1 class="container__header__title">Cookie Clicker Game!</h1> 
             <input type="text" id="cookie" disabled style=text-align:center>
-            Cookies
-            <br> <br>
-            <button><a href="#" onClick="reset()">Reset</a></button>
-            <br> <br>
+            <!-- <h2 id="cookie">0</h2> -->
+            <a href=# onClick="addCookie()"><img src="./Sugar.png" width="200px" height="200px"></a>
+            <button type="button"  onClick="reset()">Reset</a></button>
 
-            <div class="container__main__cookie__multiplier">
-                <p id="amountOfCCCMultiplier">Multipler Upgrade x1.2</p>
-                <p id="costOfCCCMulipler">Cost: 60 Cookies</p>
-                <p id="currentMuliplier"> Your Current Multipler is x1.2</p>
-
-                <button type="button" onClick="buyCCCMultiplier()">Buy Multipler</button>
-            </div>
         </div>
 
         <div class="container__main__collectiveCulminationCompunder">
 
             <p id="costOfCollectiveCulminationCompounder">Cost: 10 Cookies</p>
-            <p id="numberOfCollectiveCulminationCompounders"> You own 0 Collective Culmination Compounders</p>
-            <button type="button" onclick="purchaseCollectiveCulminationCompounder()">Purchase CollectiveCulmination Compounder</button>
+            <p id="numberOfCollectiveCulminationCompounders"> You Have 0 Collective Culmination Compounders.</p>
+            <button type="button" onClick="purchaseCollectiveCulminationCompounder()">Purchase CollectiveCulmination Compounder</button>
 
         </div>
     </div>
 
     <footer class="container__footer">
         <div class="footer__cookie__clicker__link">
-
             <a href=" https://orteil.dashnet.org/cookieclicker/ " target="__blank"><img src="./choclatecookie.png" width="80px" height="80px"></a>
         </div>
         </div>
@@ -68,7 +57,7 @@
         <div class="footer__bio__link">
 
            <a href="https://github.com/" target="__blank"><img src="./github.png" width="80px" height="80px"></a>
-            <a href="https://fpemba.github.io/" target="__blank"><img src="./linkedin.png" width=80px" height="80px"></a>
+            <a href="https://fpemba.github.io/" target="__blank"><img src="./linkedin.png" width="80px" height="80px"></a>
         </div>
     </footer>
 

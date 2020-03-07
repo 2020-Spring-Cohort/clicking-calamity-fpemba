@@ -63,11 +63,7 @@ This iteration covers project setup and starting the creation of the game.  Are 
 - Can retrieve a _Clicking Companion_ count.
 - Can add to the _Clicking Companion_ count.
 - Subtract the amount of the _Clicking Companion_ cost from your click count. -->
-
-#### FEATURE : The cost of each _Clicking Companion_ will go up with each purchase.
-> As a game designer, I want the game to become more difficult as the game progresses, so that users will continue to play the game.
-- Increase the cost of the second _Clicking Companion_ by an additional ten percent to 110.
-- Increase the cost of every additional _Clicking Companion_ by an additional ten percent.
+<!-- f -->
 
 <!-- #### FEATURE : Ensure that there are enough clicks to buy a _Clicking Companion_.
 > As the game designer, I want to ensure that players have to put the game into a proper state to be able to purchase a _Clicking Companion_, so that the game has a challenge.
@@ -86,27 +82,27 @@ This iteration covers the creation of the _Collective Culmination Compounders_, 
 - Can add to the _Collective Culmination Compounder_ count.
 - Subtract the amount of the _Collective Culmination Compounder_ cost from the click count. -->
 
-#### FEATURE : The cost of each _Collective Culmination Compounder_ will go up with each purchase.
+<!-- #### FEATURE : The cost of each _Collective Culmination Compounder_ will go up with each purchase.
 > As a game designer, I want the game to become more difficult as the game progresses, so that users will continue to play the game.
 - Increase the cost of the second __Collective Culmination Compounder_ by an additional ten percent to 11.
-- Increase the cost of every additional _Collective Culmination Compounder_ by an additional ten percent.
+- Increase the cost of every additional _Collective Culmination Compounder_ by an additional ten percent. -->
 
 
 <!-- #### FEATURE : Ensure that there are enough clicks to buy a _Collective Culmination Compounder_.
 > As the game designer, I want to ensure that players have to put the game into a proper state to be able to purchase a _Collective Culmination Compounder_, so that the game has a challenge.
 - Prevent the _Collective Culmination Compounder_ count from going up if there are not enough clicks to purchase a _Compounder_. -->
 
-#### FEATURE : The first _Collective Culmination Compounder_ should increase the value of a click 1.2x.
+<!-- #### FEATURE : The first _Collective Culmination Compounder_ should increase the value of a click 1.2x.
 > As a user, I want to make my clicks more powerful, so that I can make the work to get more _Clicking Companions_ easier.
-- Increase the amount of clicks added to the click count by 1.2 after the first _Compounder_ is purchased.
+- Increase the amount of clicks added to the click count by 1.2 after the first _Compounder_ is purchased. -->
 
-#### FEATURE : The amount the subsequent _Collective Culmination Compounders_ click bonus will go up exponentially.
+<!-- #### FEATURE : The amount the subsequent _Collective Culmination Compounders_ click bonus will go up exponentially.
 > As a CEO, I want my players hard earned _Collective Culmination Compounders_ to make a big impact, so that they keep playing the game.
-- Increase the click value multiplier to 1.2 to the _x_th power, where _x_ is the amount of the _Compounders_ count.
+- Increase the click value multiplier to 1.2 to the _x_th power, where _x_ is the amount of the _Compounders_ count. -->
 
-#### FEATURE : The _Collective Culmination Compounders_ click bonus will apply to clicks from the _Click Companions_.
+<!-- #### FEATURE : The _Collective Culmination Compounders_ click bonus will apply to clicks from the _Click Companions_.
 > As a user, I want to see my click investments work together to get me more clicks, so that I can have all the clicks.
-- When an 'Add auto clicks' event is executed, increase the value of each auto click by the amount of the click value multiplier.
+- When an 'Add auto clicks' event is executed, increase the value of each auto click by the amount of the click value multiplier. -->
 
 ### Iteration 3
 This iteration will prepare the html document for the game.  Open the index.html file and start adding the elements you'll need.  Maintain the structure of the HTML with semantic html elements and use BEM to give useful class attribute names to your elements.  Use a combination of HTML, CSS, and JavaScript to achieve the trickier features below.
@@ -169,9 +165,9 @@ This iteration will wire up your ClickCounter.js file to the index.html file and
 ### Iteration 5 
 This iteration is for you to individualize your project.  Use JavaScript to affect change to how your elements are displayed, add new features, document and make changes to the above rules, or make elements move across the screen.
 
-#### FEATURE : Deploy your app to the internet.
+<!-- #### FEATURE : Deploy your app to the internet.
 > As a CEO, I want this app to be on the _INTERWEBS_, so that I can collect my bonus.
-- Use GitHub pages to deploy your project to the internet.
+- Use GitHub pages to deploy your project to the internet. -->
 
 <!-- #### FEATURE : Implement a way to reset the game.  
 > As a user, I want to be able to reset my game, so that my coworkers won't know how much time I wasted on clicking a button.
