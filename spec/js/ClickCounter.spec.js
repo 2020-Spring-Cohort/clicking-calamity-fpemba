@@ -27,5 +27,35 @@ describe('Clicking Calamity Tests:', () => {
             underTest.purchaseCompanion()
             expect(underTest.getCompanionCount()).toBe(1);
         });
+
+        it("ClickCount should be able to purchase more clicking companions.",() =>{
+            for (let i = 0; i<220; i++){
+                underTest.countClick()
+            }
+            underTest.purchaseCompanion()
+            underTest.purchaseCompanion()
+            expect(underTest.getCompanionCount()).toBe(2);
+         });
+
+        it("the cost of purchase companion goes up by 10%.",() =>{
+            for (let i = 0; i<100; i++){
+                underTest.countClick()
+            }
+            underTest.purchaseCompanion()
+            expect(underTest.companionCost).toBe(Math.round(100));
+        
+         });
+
+         it("The cost of each Clicking Companion will go up with each purchase by 10%.",() =>{
+             
+            for (let i = 0; i<110; i++){
+                underTest.countClick();
+            } 
+                underTest.purchaseCompanion()
+                underTest.purchaseCompanion()
+                expect(underTest.clickCount).toBe(10);
+                expect(underTest.companionCost).toBe(100);
+           
+         })
     });
 });

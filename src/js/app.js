@@ -3,7 +3,7 @@ let autoClick = 0;
 let collectiveCulminationCompounderClick = 0;
 let multiplier = 1.2;
 let power=0;
-let cursorCost=100;
+let companionCost=100;
 let costOfCollectiveCulminationCompounder=10;
 let priceMultiplier=.10;
 let cookiecount =Math.pow(multiplier, power);
@@ -16,7 +16,7 @@ function update() {
 
     document.getElementById('numberOfClickingCompanion').innerHTML = "You Have " + autoClick + " Clicking Companions.";
 
-    document.getElementById('costOfClickingCompanion').innerHTML = "Cost: " + cursorCost + " Cookies";
+    document.getElementById('costOfClickingCompanion').innerHTML = "Cost: " + companionCost + " Cookies";
 
     document.getElementById('costOfCollectiveCulminationCompounder').innerHTML = "Cost: " + costOfCollectiveCulminationCompounder + " Cookies";
 
@@ -51,10 +51,10 @@ function reset() {
 
 function purchaseClickingCompanion() {
 
-    if (cookiecount >= cursorCost) {
-        cookiecount = cookiecount - cursorCost;
+    if (cookiecount >= companionCost) {
+        cookiecount = cookiecount - companionCost;
         autoClick = autoClick + 1;
-        cursorCost+=Math.floor((cursorCost*.10));
+        companionCost+=Math.floor((companionCost*.10));
         update()
     }
 }

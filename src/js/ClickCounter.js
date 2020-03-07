@@ -2,6 +2,7 @@ class ClickCount {
     constructor() {
         this.clickCount = 0;
         this.companionCount = 0;
+        this.companionCost = 100;
     }
     countClick() {
         this.clickCount++;
@@ -19,5 +20,11 @@ class ClickCount {
             this.companionCount++;
         }
  
+    }
+    companionCost(){
+        if (clickcount >= companionCost) {
+            clickcount = clickcount - companionCost;
+            companionCost+=Math.floor((companionCost*.10));
+        }
     }
 }
