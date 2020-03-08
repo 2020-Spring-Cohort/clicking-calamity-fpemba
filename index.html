@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,49 +11,47 @@
 <body class="container">
 
     <header class="container__header">
-<div class="container__header__info">
+        <div class="container__header__info">
 
-       <h3 class="tooltip">Company Info
+            <h3 class="tooltip">Company Info
            <span class="tooltiptext">Coo Coo Computing Challengers is a company that spends more time creating 
                alliterative puns than actual writing software and they need our help.</span>
        </h3>
 
-      <a href=" https://orteil.dashnet.org/cookieclicker/ " target="__blank"><h3>Our Inspiration</h3></a>
+            <div class="container__link"> <a href=" https://orteil.dashnet.org/cookieclicker/ " target="__blank"><h3>Our Inspiration</h3></a></div>
 
 
-      <h3 class="tooltip">About The Developer
+            <h3 class="tooltip">About The Developer
         <span class="tooltiptext">My name is Fatuma Pemba and I love coding! To learn more about me, please
             check out my github <a href="https://github.com/" target="__blank">Here</a> and
             portfolio <a href="https://fpemba.github.io/" target="__blank">Here</a>. Thanks for playing
             the game!
         </span>
     </h3>
-
-    </div>
+        </div>
     </header>
 
     <div class="container__main">
-        
-
         <div class="container__main__companion">
-        
-    
+
+
             <p id="costOfClickingCompanion"> Cost: 100 Cookies</p>
-            <p id="numberOfClickingCompanion">You Have 0 Clicking Companions.</p> 
-            <button type="button" onClick="purchaseClickingCompanion()">Purchse Clicking Companion</a></button> 
+            <p id="numberOfClickingCompanion">You Have 0 Clicking Companions.</p>
+            <button type="button" onClick="purchaseClickingCompanion()">Purchse Clicking Companion</a></button>
         </div>
 
         <div class="container__main__cookie">
-            <h1 class="container__header__title">Cookie Clicker Game!</h1> 
+            <h1 class="container__header__title">Cookie Clicker Game!</h1>
             <input type="text" id="cookie" disabled style=text-align:center>
-            <!-- <h2 id="cookie">0</h2> -->
-            <a href=# onClick="addCookie()"><img src="./Sugar.png" width="200px" height="200px"></a>
-            <button type="button"  onClick="reset()">Reset</a></button>
+            <p id="cookiesPerSecond">0 cookies per second</p>
 
+            <a href=# onClick="addCookie()"><img src="./images/choclatecookie.png" width="200px" height="200px"></a>
+
+            <button type="button" onClick="reset()">Reset</a></button>
         </div>
 
-        <div class="container__main__collectiveCulminationCompunder">
 
+        <div class="container__main__collectiveCulminationCompunder">
             <p id="costOfCollectiveCulminationCompounder">Cost: 10 Cookies</p>
             <p id="numberOfCollectiveCulminationCompounders"> You Have 0 Collective Culmination Compounders.</p>
             <button type="button" onClick="purchaseCollectiveCulminationCompounder()">Purchase CollectiveCulmination Compounder</button>
@@ -64,14 +61,14 @@
 
     <footer class="container__footer">
         <div class="footer__cookie__clicker__link">
-            <a href=" https://orteil.dashnet.org/cookieclicker/ " target="__blank"><img src="./choclatecookie.png" width="80px" height="80px"></a>
+            <a href=" https://orteil.dashnet.org/cookieclicker/ " target="__blank"><img src="./images/choclatecookie.png" width="80px" height="80px"></a>
         </div>
         </div>
 
         <div class="footer__bio__link">
 
-           <a href="https://github.com/" target="__blank"><img src="./github.png" width="80px" height="80px"></a>
-            <a href="https://fpemba.github.io/" target="__blank"><img src="./linkedin.png" width="80px" height="80px"></a>
+            <a href="https://github.com/" target="__blank"><img src="./images/github.png" width="80px" height="80px"></a>
+            <a href="https://fpemba.github.io/" target="__blank"><img src="./images/linkedin.png" width="80px" height="80px"></a>
         </div>
     </footer>
 

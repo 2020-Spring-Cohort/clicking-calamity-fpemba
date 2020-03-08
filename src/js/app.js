@@ -10,7 +10,8 @@ let cookiecount =Math.pow(multiplier, power);
 let value = 0;
 function update() {
 
-    document.getElementById('cookie').value = Math.floor(cookiecount)
+    document.querySelector('#cookie').value = Math.floor(cookiecount)
+    document.querySelector('#cookie').innerHTML = Math.floor(cookiecount);
 
     document.title = Math.floor(cookiecount) + "  Cookies";
 
@@ -21,6 +22,7 @@ function update() {
     document.getElementById('costOfCollectiveCulminationCompounder').innerHTML = "Cost: " + costOfCollectiveCulminationCompounder + " Cookies";
 
     document.getElementById('numberOfCollectiveCulminationCompounders').innerHTML = "You Have " + collectiveCulminationCompounderClick + " Collective Culmination Compounders.";
+    document.querySelector('#cookiesPerSecond').innerHTML = Math.round((autoClick * multiplier)) + " cookies per second";
 
 };
 
@@ -29,7 +31,7 @@ function timer() {
     cookiecount = cookiecount + autoClick;
     cookiecount = cookiecount + collectiveCulminationCompounderClick;
     update()
-
+   
 };
 setInterval(timer, 1000)
 
@@ -40,11 +42,10 @@ function addCookie() {
     update()
 };
 
-
-
 function reset() {
     cookiecount = 0
-    document.getElementById('cookie').innerHTML = Math.floor(cookiecount);
+    collectiveCulminationCompounderClick
+
     update()
 
 };
